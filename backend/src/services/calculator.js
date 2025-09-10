@@ -28,6 +28,7 @@ const calculateTransportation = (inputs, factors) => {
     total += inputs.distance * factor;
   }
   
+  
   if (inputs.flightDistance) {
     const factor = factors.transportation.flight_per_km || 0;
     total += inputs.flightDistance * factor;
