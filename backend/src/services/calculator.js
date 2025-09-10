@@ -4,7 +4,26 @@ const calculateTransportation = (inputs, factors) => {
   let total = 0;
   
   if (inputs.distance && inputs.carType) {
-    const factorKey = `car_${inputs.carType.toLowerCase()}_per_km`;
+    // Handle different transportation types
+    let factorKey = '';
+    switch(inputs.carType) {
+      case 'gasoline':
+      case 'diesel':
+        factorKey = `car_${inputs.carType.toLowerCase()}_per_km`;
+        break;
+      case 'bus':
+        factorKey = 'bus_per_km';
+        break;
+      case 'train':
+        factorKey = 'train_per_km';
+        break;
+      case 'motorcycle':
+        factorKey = 'motorcycle_per_km';
+        break;
+      default:
+        factorKey = `car_${inputs.carType.toLowerCase()}_per_km`;
+    }
+    
     const factor = factors.transportation[factorKey] || 0;
     total += inputs.distance * factor;
   }

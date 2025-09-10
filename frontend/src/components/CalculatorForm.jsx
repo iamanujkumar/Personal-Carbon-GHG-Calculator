@@ -171,7 +171,7 @@ const CalculatorForm = ({ onCalculate }) => {
         <h3 className="text-lg font-medium text-gray-900 mb-3">Transportation</h3>
         <div className="grid grid-cols-1 gap-4">
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Car Type</label>
+            <label className="block text-sm font-medium text-gray-700 mb-1">Transportation Type</label>
             <select
               name="transportation.carType"
               value={formData.transportation.carType}
@@ -179,8 +179,11 @@ const CalculatorForm = ({ onCalculate }) => {
               className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md p-2 border"
             >
               <option value="">Select</option>
-              <option value="gasoline">Gasoline</option>
-              <option value="diesel">Diesel</option>
+              <option value="gasoline">Gasoline Car</option>
+              <option value="diesel">Diesel Car</option>
+              <option value="bus">Bus</option>
+              <option value="train">Train</option>
+              <option value="motorcycle">Motorcycle</option>
             </select>
           </div>
           <div>
