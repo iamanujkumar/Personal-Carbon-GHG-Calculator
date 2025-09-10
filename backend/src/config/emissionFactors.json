@@ -1,0 +1,42 @@
+{
+  "transportation": {
+    "car_gasoline_per_km": 0.192,
+    "car_diesel_per_km": 0.170,
+    "bus_per_km": 0.100,
+    "train_per_km": 0.041,
+    "flight_per_km": 0.255,
+    "motorcycle_per_km": 0.120,
+    "rail_per_km": 0.041
+  },
+  "digital": {
+    "email_with_attachment": 0.0003,
+    "video_call_1hour": 0.001,
+    "website_visit": 0.0001,
+    "social_media_post": 0.0002
+  },
+  "events": {
+    "wedding_attendance": 150,
+    "concert_attendance": 50,
+    "conference_attendance": 30
+  },
+  "food": {
+    "beef_meal": 15.0,
+    "chicken_meal": 2.5,
+    "vegetarian_meal": 1.0,
+    "vegan_meal": 0.5
+  },
+  "household": {
+    "electricity_kwh": 0.45,
+    "natural_gas_kwh": 0.2,
+    "oil_kwh": 0.27,
+    "propane_kwh": 0.23,
+    "water_liter": 0.0003,
+    "waste_kg": 0.7
+  },
+  "shipping": {
+    "air_per_kg_km": 0.002,
+    "truck_per_kg_km": 0.0001,
+    "ocean_per_kg_km": 0.00002,
+    "rail_per_kg_km": 0.00005
+  }
+}
